@@ -1,19 +1,44 @@
-<h1>Code Chat</h1>
-<div>
-    <h3>Login</h3>
-    <input type="text" id="loginName" placeholder="name" />
-    <input type="password" id="loginPassword" placeholder="password" />
-    <button id="loginButton">Login</button>
-</div>
-<div>
-    <h3>Signup</h3>
-    <input type="text" id="signupName" placeholder="name" />
-    <input type="password" id="signupPassword" placeholder="password" />
-    <input type="password" id="signupConfirmPassword" placeholder="confirm password" />
-    <button id="signupButton">Signup</button>
+<br>
+<div class="container">
+    <div class="form-signin">
+        <h3 class="form-sigin-heading">Login</h3>
+        <input class="form-control" type="text" id="loginName" placeholder="name" />
+        <input class="form-control" type="password" id="loginPassword" placeholder="password" />
+        <button id="loginButton" class="btn btn-lg btn-primary btn-block">Login</button>
+        
+        <h3 class="form-sigin-heading">Signup</h3>
+        <input class="form-control" type="text" id="signupName" placeholder="name" />
+        <input class="form-control" type="password" id="signupPassword" placeholder="password" />
+        <input class="form-control" type="password" id="signupConfirmPassword" placeholder="confirm password" />
+        <button class="btn btn-lg btn-primary btn-block" id="signupButton">Signup</button>
+    </div>
 </div>
 
 <script>
+    $('#loginPassword').bind("enterKey", function(e){
+        console.log("Teste");
+        $("#loginButton").click();
+    });
+    
+    $('#loginPassword').keyup(function(e){
+        if(e.keyCode == 13)
+        {
+            $(this).trigger("enterKey");
+        }
+    });
+    
+    $('#signupConfirmPassword').bind("enterKey", function(e){
+        console.log("Teste");
+        $("#signupButton").click();
+    });
+    
+    $('#signupConfirmPassword').keyup(function(e){
+        if(e.keyCode == 13)
+        {
+            $(this).trigger("enterKey");
+        }
+    });
+    
     $("#loginButton").click(function(){
         var username = $("#loginName").val();
         var password = $("#loginPassword").val();

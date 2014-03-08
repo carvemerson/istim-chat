@@ -5,6 +5,7 @@
 </div>
 <div id="messagesContainer">
 </div>
+
 <script>
     var MessageModel = Backbone.Model.extend({
         urlRoot: '/messages',
@@ -58,7 +59,7 @@
     messages.fetch();
 
     $("#postMessageButton").click(function(){
-        console.log("Enviou!");
+        //console.log("Enviou!");
         var messageText = $("#message").val();
         messages.create({message: messageText}, {wait: true});
         $("#message").val("");
