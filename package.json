@@ -1,7 +1,7 @@
 {
     "name": "IstimChatAPI",
     "private": true,
-    "version": "0.0.0",
+    "version": "0.0.0-1",
     "description": "a Sails application",
     "dependencies": {
         "sails": "0.9.11",
@@ -12,7 +12,6 @@
         "password-hash": "~1.2.1",
         "express": "*",
         "socket.io": "*"
-        
     },
     "scripts": {
         "start": "node app.js",
@@ -21,5 +20,9 @@
     "main": "app.js",
     "repository": "",
     "author": "",
-    "license": ""
+    "license": "",
+    "subdomain": "undefined-IstimChatAPI",
+    "engines": {
+        "node": "0.10.x"
+    }
 }

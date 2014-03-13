@@ -17,6 +17,10 @@
 
 module.exports = {
 
+    userlist: function (req, res){
+        res.view('main/users');
+    },
+    
   getFriends : function (req, res) {
       var username = req.param('username'); // required parameters
       
@@ -65,7 +69,7 @@ module.exports = {
                           usr.friendList[position] = newfriend; // add
                           usr.save(function (err) { //save changes made in the users
                             if (err) {
-                                res.send("Erro ao salvar");
+                                res.send("Error Save");
                             }
                           });
 
@@ -111,7 +115,7 @@ module.exports = {
                             usr.status = status;
                             usr.save(function (err) { //save changes made in the users
                                 if (err) {
-                                    res.send("Erro ao salvar");
+                                    res.send("Error save");
                                 }
                             }); 
                             
@@ -123,7 +127,5 @@ module.exports = {
                 }
             );
         }
-    }
-
- 
+    } 
 };

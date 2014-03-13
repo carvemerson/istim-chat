@@ -36,6 +36,10 @@ module.exports.routes = {
     '/signup': 'MainController.signup',
     '/login': 'MainController.login',
     '/chat': 'MainController.chat',
+    '/userlist': {
+        controller: 'Users',
+        action: 'userlist'
+    },
     
     '/getFriends' : 'UsersController.getFriends',
     

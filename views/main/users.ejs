@@ -1,0 +1,16 @@
+<h1>Usuários Cadastrados</h1>
+
+<div ng-controller="coreController" class="container">
+    <div class="panel panel-default">
+      <!-- Default panel contents -->
+      <div class="panel-heading"><b>Usuários Cadastrados</b></div>
+
+      <!-- Table -->
+      <table class="table">
+          <tbody>
+            <tr ng-repeat="users in userss"><td>{{users.username}}</td></tr>
+          </tbody>         
+      </table>
+    </div>
+</div>
+

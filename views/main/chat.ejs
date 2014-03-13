@@ -1,9 +1,14 @@
 <h2>Welcome <%= username %></h2>
-<div id="newMessageForm">
-    <textarea id="message" placeholder="Enter your message here:"></textarea>
-    <button id="postMessageButton">Add Message</button>
+
+<div class="container">
+    <div class="page-header" id="messagesContainer">
+    </div>
 </div>
-<div id="messagesContainer">
+
+<div class="container" id="newMessageForm">
+    <textarea class="form-control" id="message" placeholder="Enter your message here:"></textarea>
+    <br>
+    <button class="btn btn-lg btn-primary btn-block" id="postMessageButton">Add Message</button>
 </div>
 
 <script type="text/javascript" src="/js/server.js"></script>
