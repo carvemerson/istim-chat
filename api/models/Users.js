@@ -28,7 +28,9 @@ module.exports = {
         },
 
         friendList: {
-            type: 'array'
+            type: 'array',
+            defaultsTo: new Array()
+            
         },
 
         getStatus: function() {

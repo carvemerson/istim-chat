@@ -37,6 +37,14 @@ module.exports.routes = {
     '/login': 'MainController.login',
     '/chat': 'MainController.chat',
     
+    '/getFriends' : 'UsersController.getFriends',
+    
+    '/addFriend' : 'UsersController.addFriend',
+    
+    '/getStatus' : 'UsersController.getStatus',
+    
+    '/setStatus' : 'UsersController.setStatus'
+    
 
   /*
   // But what if you want your home page to display
