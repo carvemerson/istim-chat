@@ -1,12 +1,8 @@
-# IstimChatAPI
-==============
+istim-chat
+==========
+A chat API that supply communication between Istim's users
 
-### A chat API that supply communication between Istim's users for experience exchange
-### API REST que provê a estrutura de um live chat
-
-## Fucionalidades
-=================
-
+## Services
 ### Listar Usuários
   - http://localhost:1337/users/
 
